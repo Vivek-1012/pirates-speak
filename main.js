@@ -8,6 +8,13 @@ function getTranslationURL(input) {
      return serverURL + "?" + "text=" + input
 }
 
+function errorHandler(error) {
+    console.log("error occured", error);
+    alert("something wrong with server! try again after some time")
+}
+
+
+
 function clickHandler() {
     // outputDiv.innerText = "ajsjsjsjsjsjsj " + inputTxt.value;
    var inputText = inputTxt.value;
@@ -19,6 +26,8 @@ function clickHandler() {
     var translatedText = json.contents.translated;
     outputDiv.innerText = translatedText;
    })
+
+   .catch(errorHandler)
     
    
 };
