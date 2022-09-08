@@ -58,6 +58,11 @@ h1 {
     font-size: 45px;
 }
 
-#footer {
-    background-color: black;
+#foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+ background-color: rgb(7, 10, 41);
 }
